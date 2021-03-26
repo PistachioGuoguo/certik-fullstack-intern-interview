@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Inter');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body {
   margin: 0;
@@ -26,6 +27,10 @@ code {
 
 }
 
+
+.card-text a{
+  color:#4980ca;
+}
 
 .card-text {
 
@@ -135,6 +140,7 @@ code {
 .gauge:hover {
   --rotation: 100deg;
 }
+
 .gauge .value {
   position:absolute; bottom:0%; left:0;   
   width:100%; 

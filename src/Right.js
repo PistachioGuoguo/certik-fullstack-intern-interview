@@ -1,21 +1,21 @@
+import Gauge from './Gauge';
+
 const Right = (props) => {
 
     const indicators = props.indicators;
 
-    console.log(indicators);
+    // extract data
 
     const numStaticIssues = indicators[0]['issues'];
-    const numChecks = indicators[0]['checks'];
-
-    const scoreStatic = indicators[0]['score'];
-    const scoreOnchain = indicators[1]['score'];
-    const scoreSentiment = indicators[2]['score'];
-
-    const scoreVolatility =  indicators[4]['score'];
-    const scoreRisk = indicators[5]['score'];
+    const numStaticChecks = indicators[0]['checks'];
     const numRiskIssues = indicators[5]['issues'];
 
-    const rate = (score) => {
+    let scores = indicators.map(x => x.score);
+   
+       
+    // calculate grade and corresponding color given a score
+
+    const rate = (score) => {   
         if (score >= 90){
             return {color:"#40B884", grade:"Excellent"};
         }else if(score >= 80){
@@ -25,19 +25,31 @@ const Right = (props) => {
         }
     }
 
+    const [scoreStatic, scoreOnChain, scoreSentiment, scoreGovernance, scoreVolatility, scoreRisk] = scores;
+
+    // calcalate rates
     const rateStatic = rate(scoreStatic);
-    const rateOnChain = rate(scoreOnchain);
+    const rateOnChain = rate(scoreOnChain);
     const rateVolatility = rate(scoreVolatility);
     const rateRisk = rate(scoreRisk);
     const rateSentiment = rate(scoreSentiment);
 
 
-    const staticGaugeStyle = {
-        "width": "100px",
-        "--rotation": (scoreStatic * 1.8) + "deg",
-        "--color": rateStatic.color,
-        "--background": "#e9ecef"
-    };
+    // generate css parameters of a gauge
+    const generateGaugeStyle = (score) => {
+        return ({
+            "width": "100px",
+            "--rotation": (score * 1.8) + "deg", // x / 100 * 180 degree
+            "--color": rate(score).color,
+            "--background": "#e9ecef"  // bg color for gauge ring
+        });
+    }
+
+    console.log(scoreGovernance);
+
+    const styles = scores.map( score => generateGaugeStyle(score));
+    const [styleStatic, styleOnChain, styleSentiment, styleGovernance, styleVolatility, styleRisk] = styles;
+
 
 
     return ( 
@@ -47,17 +59,10 @@ const Right = (props) => {
 
                 <div className="card-text">
                     <h5>Static Analysis</h5>
-                    <p> <text style={{color:rateStatic.color}}> {numStaticIssues} </text> issues selected out of {numChecks} vulnerability and security checks</p>
-
+                    <p> <span style={{color:rateStatic.color}}> {numStaticIssues} </span> issues selected out of {numStaticChecks} vulnerability and security checks</p>
                 </div>
 
-                <div className="card-gauge">
-                    <div className="gauge" style={staticGaugeStyle}>
-                        <div className="percentage"></div>
-                        <div className="mask"></div>
-                        <span className="value">{scoreStatic}</span>
-                    </div>
-                </div> 
+                <Gauge style={styleStatic} score={scoreStatic} />
 
             </div>
 
@@ -65,33 +70,40 @@ const Right = (props) => {
 
                 <div className="card-text">
                     <h5>On-chain Monitoring</h5>
-                    <p> <text style={{color:rateOnChain.color }}> {rateOnChain.grade} </text> based on real-time transactional tracking systems </p>
+                    <p> <span style={{color:rateOnChain.color}}> {rateOnChain.grade} </span> based on real-time transactional tracking systems </p>
                 </div>
               
+                <Gauge style={styleOnChain} score={scoreOnChain} />
             </div>
 
             <div className="card-item">
 
                 <div className="card-text">
                     <h5>Social Sentiment</h5>
-                    <p><text style={{color:rateSentiment.color }}> {rateSentiment.grade} </text> {scoreSentiment} based on social monitoring and sentiment analysis </p>
+                    <p><span style={{color:rateSentiment.color}}> {rateSentiment.grade} </span> {scoreSentiment} based on social monitoring and sentiment analysis </p>
                 </div>
+
+                <Gauge style={styleSentiment} score={scoreSentiment} />
                
             </div>
 
             <div className="card-item">
                 <div className="card-text">
                     <h5>Governance & Autonomy</h5>
-                    <p> <text style={{color:"#40B884"}}>{1}</text>  security-type certificate found on <a href="http://google.com/">Certik Chain</a></p>
+                    <p> <span style={{color:"#40B884"}}>{1}</span>  security-type certificate found on <a href="http://google.com/">Certik Chain <i class="fa fa-external-link"></i></a></p>
                 </div>
+
+                <Gauge style={styleGovernance} score={scoreGovernance} / >
                
             </div>
 
             <div className="card-item">
                 <div className="card-text">
                     <h5>Market Volatility</h5>
-                    <p> <text style={{color:rateVolatility.color }}> {rateVolatility.grade} </text> based on indicators over trading volume/liquidity/depth </p>
+                    <p> <span style={{color:rateVolatility.color}}> {rateVolatility.grade} </span> based on indicators over trading volume/liquidity/depth </p>
                 </div>
+
+                <Gauge style={styleVolatility} score={scoreVolatility} / >
                
             </div>
 
@@ -99,8 +111,10 @@ const Right = (props) => {
             <div className="card-item">
                 <div className="card-text">
                     <h5>Risk Assessment</h5>
-                    <p> <text style={{color:rateRisk.color}}> {rateRisk.grade} </text> based on {numRiskIssues} safety and hazard evaluations </p>
+                    <p> <span style={{color:rateRisk.color}}> {rateRisk.grade} </span> based on {numRiskIssues} safety and hazard evaluations </p>
                 </div>
+
+                <Gauge style={styleRisk} score={scoreRisk} / >
                
             </div>
 
