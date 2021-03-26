@@ -19,10 +19,8 @@ const Right = (props) => {
             return "Excellent";
         }else if(score >= 80){
             return "Good";
-        }else if (score >= 70){
-            return "Average";
         }else{
-            return "Bad"
+            return "Average";
         }
     }
 
