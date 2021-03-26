@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import './Right.js';
+import Right from './Right.js';
+import useFetch from './useFetch';
 
 function App() {
+
+  const testUrl = 'http://localhost:8000/primitives';
+
+  const indicators = useFetch(testUrl)['data'];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+         { indicators && <Right indicators={indicators} />} 
     </div>
   );
 }
