@@ -25,6 +25,17 @@ body {
   margin: 10px 10px;
 }
 
+h4{
+  font-family: Inter;
+  color: #354559;
+  text-align: left;
+  padding: 10px;
+  line-height: 13px;
+  font-size: 14px;
+  margin: 0px 0;
+  padding: 6px 10px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -272,8 +283,8 @@ code {
   position: relative;
   width: 291.43px;    
   height: 252.86px;
+  margin-top: -4%;
   margin: 0 20%;
-  top: 20%;
 
   background-color: #f9f9fa; 
 }

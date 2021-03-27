@@ -30,7 +30,7 @@ const RadarGraph = (props) => {
     };
 
     return ( 
-        <Radar data={data} options={options} height={600}/>
+        <Radar data={data} options={options} height={530}/>
      );
 }
  

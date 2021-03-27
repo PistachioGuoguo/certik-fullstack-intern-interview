@@ -9,8 +9,12 @@ function App() {
   const testUrl = 'http://localhost:8000/primitives';
   const indicators = useFetch(testUrl)['data'];
 
+
+
   return (
     <div className="App">
+
+      <h4>DYP.Finance - Skynet Overview</h4>
 
       <div className="left">
         { indicators && <Left indicators={indicators} />}
