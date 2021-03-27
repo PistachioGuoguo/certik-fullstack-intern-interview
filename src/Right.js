@@ -10,7 +10,7 @@ const Right = (props) => {
     const numStaticChecks = indicators[0]['checks'];
     const numRiskIssues = indicators[5]['issues'];
 
-    let scores = indicators.map(x => x.score);
+    let scores = indicators.map(indicator => indicator.score);
    
        
     // calculate grade and corresponding color given a score
@@ -49,8 +49,6 @@ const Right = (props) => {
 
     const styles = scores.map( score => generateGaugeStyle(score));
     const [styleStatic, styleOnChain, styleSentiment, styleGovernance, styleVolatility, styleRisk] = styles;
-
-
 
     return ( 
        <div className="card-list">

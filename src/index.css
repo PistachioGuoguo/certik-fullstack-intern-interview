@@ -10,6 +10,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.left{
+  /* float: left; */
+  position: static;
+  width: 574px;
+  height: 536px;
+  left: 0px;
+  top: 0px;
+  margin: 10px 10px;
+  background-color: #f9f9fa; 
+}
+
+.right{
+  display: block;
+  margin: 10px 10px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -35,7 +51,6 @@ code {
 .card-text {
 
   float: left;
-
   border-radius: 4px;
 }
 
@@ -157,3 +172,113 @@ code {
   bottom:0; right:5%;   
 }
 
+/* Text Blocks in Left */
+
+#one{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 168px;
+  height: 85px;
+  left: 19px;
+  top: 99px;
+}
+
+#two{
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 169px;
+  height: 85px;
+  left: 206px;
+  top: 16px;
+
+}
+
+#three{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 160px;
+  height: 85px;
+  left: 404px;
+  top: 99px;
+}
+
+#four{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 160px;
+  height: 85px;
+  left: 404px;
+  top: 347px;
+}
+
+#five{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 176px;
+  height: 85px;
+  left: 206px;
+  top: 432px;
+}
+
+#six{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 160px;
+  height: 85px;
+  left: 19px;
+  top: 347px;
+}
+
+.left-text-box{
+  font-family: Inter;
+  text-align: left;
+}
+
+.left-text-box h5{
+  font-size: 14px;
+  line-height: 21px;
+  color: #354559;
+  margin-bottom: -5px;
+}
+
+.left-text-box p{
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.radar-wrapper{
+  position: relative;
+  width: 291.43px;    
+  height: 252.86px;
+
+  top: 25%;
+
+  background-color: #f9f9fa; 
+}
