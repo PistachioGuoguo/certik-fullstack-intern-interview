@@ -2,6 +2,9 @@
 
 Here is the full-stack intern question, it wants you to immitate a webpage using React. The deadline is 7 days.
 
+
+
+
 I completed this using a day and a half, when I asked is this okay and is there something needed to improve, the person said it's okay.
 
 Then, another person came in, saying "this project cannot tell much about your coding ability, please use react to immitate a company home page".
@@ -19,3 +22,11 @@ Good luck to those of you in a job search! There are a tons of great companies o
 More related: [Glassdoor](https://www.glassdoor.com/Interview/CertiK-Interview-Questions-E3173024.htm)
 
 如果你懂中文的话，欢迎去[一亩三分地](https://www.1point3acres.com/bbs/thread-754404-1-1.html)去看我的贴子，里面有更详尽的过程叙述。(Translation: If you know Chinese, please visit the detailed version of my response at [1point3acres.com](https://www.1point3acres.com/bbs/thread-754404-1-1.html))
+
+
+Below are the comparison of their requirement and my work (2 day)
+
+![image](https://user-images.githubusercontent.com/33917457/116788336-9a7deb00-aa6e-11eb-85ed-128fd8c2cc15.png)
+
+![image](https://user-images.githubusercontent.com/33917457/116788365-bb464080-aa6e-11eb-831f-c0dd6ee57097.png)
+
