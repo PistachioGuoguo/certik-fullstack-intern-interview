@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+### Stay away from subpar companies like CertiK, waste your time and cares shit about you
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here is the full-stack intern question, it wants you to immitate a webpage using React. The deadline is 7 days.
 
-## Available Scripts
+I completed this using a day and a half, when I asked is this okay and is there something needed to improve, the person said it's okay.
 
-In the project directory, you can run:
+Then, another person came in, saying "this project cannot tell much about your coding ability, please use react to immitate a company home page".
 
-### `npm start`
+After negotiation and their approval, I spent a few hours using python and did a cmd-version of ranking of company page score ranking to show my algorithm ability, and there was no message thereafter. They vanished like a fart in the wind.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+--------------
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This small stupid company is a sham, it wastes candidates time and showed no respect at all. Even it's a email rejection from normal companies, I got template letters, and it does not waste my time. Well for CertiK? Nothing, guess I am just too weak for their highness.
 
-### `npm test`
+My personal suggestion is, stay away from CertiK as best as you can, and also **stay away from any task-based-interview companies**, they are mostly wasting your precious time and energy for other application, put it more simply they do not care about candidates, they are selfish bastards that only want to maximize their own interst. It would be disastrous if any company is like this.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Good luck to those of you in a job search! There are a tons of great companies out there :D
 
-### `npm run build`
+More related: [Glassdoor](https://www.glassdoor.com/Interview/CertiK-Interview-Questions-E3173024.htm)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+如果你懂中文的话，欢迎去[一亩三分地](https://www.1point3acres.com/bbs/thread-754404-1-1.html)去看我的贴子，里面有更详尽的过程叙述。(Translation: If you know Chinese, please visit the detailed version of my response at [1point3acres.com](https://www.1point3acres.com/bbs/thread-754404-1-1.html))
